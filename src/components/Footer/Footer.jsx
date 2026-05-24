@@ -7,6 +7,7 @@ export const Footer = () => {
             <nav>
                 <ul className="nav-list">
                     <li>WhatsApp</li>
+                    <li>Instagram</li>
                 </ul>
             </nav>
             <p>&copy; 2023 Mi Tienda. Todos los derechos reservados.</p>

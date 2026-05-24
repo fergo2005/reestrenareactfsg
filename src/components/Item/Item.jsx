@@ -13,3 +13,4 @@ export const Item = ({ titulo, descripcion, precio, imagenes, children }) => {
         </article>
     );
 };
+

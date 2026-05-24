@@ -1,36 +1,82 @@
-Header {
-    margin: 0;    
-    padding: .5rem;
-    /* width: 100%; */
-    height: 10%;
+/* HEADER */
+
+.header {
+    background: #000000;
+    padding: 1rem;
     display: flex;
+    
+    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
-    
-    /* background-color: #1c1b1b; */
-    background-color: #000000;
-    /* color: rgb(96, 35, 248); */   
 
+    /* Sombra moderna */
+    box-shadow: 0 4px 16px rgba(250, 6, 6, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
+/* Contenedor del logo + texto */
 .logo-container {
     display: flex;
     align-items: center;
-    font-size: 3rem;
-    /* width: 160px; */
-    height: 100%;
 }
 
-.logo-image {
-    width: 100%;
-    /* height: auto; */
-    /* border-radius: 50%; */
-}
-
-
-
-img {
-/*     width: 100%; */
-    height: 80px;
+/* Imagen del logo */
+.logo {
+    width: 48px;
+    height: 48px;
+    /* object-fit: contain; */
+    margin-right: 1rem;
     border-radius: 50%;
+
+
 }
+
+.logo:hover {
+    filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
+    opacity: 1;
+    transform: scale(1.05);
+
+    filter: drop-shadow(0 0 25px rgb(23, 246, 246));
+}
+
+
+
+/* Texto "Re-Estrena" */
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.logo-text:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    color: rgb(23, 246, 246);
+    /* Glow principal */
+    filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
+    /* Glow extra */
+    text-shadow:
+        0 0 12px rgba(11, 217, 249, 0.6),
+        0 0 25px rgb(23, 246, 246);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* Quitamos subrayado del Link */
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+

@@ -5,13 +5,6 @@
   font-size: 16px;
 }
 
-body {
-  margin: 0;
-  background-color: #121212;
-  color: #ffffff;
-  font-family: system-ui, sans-serif;
-}
-
 /* Para que el footer quede abajo siempre hay que mantener la estructura de Header-Main-Footer */
 #root {
   display: flex;
@@ -19,45 +12,4 @@ body {
   min-height: 100vh;
 }
 
-main {
-  flex: 1;
-}
 
-.primary {
-  color: #eaeaea;
-}
-
-.secondary {
-  color: #b3b3b3;
-}
-
-.disabled {
-  color: #7a7a7a;
-}
-
-.btn {
-  display: inline-block;
-  
-  background-color: #3b82f6;
-  padding: .5rem 1rem;
-  border-radius: .5rem;  
-  border: none;  
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #2563eb;
-}
-
-.btn:active {
-  background-color: #7a5c5c;
-}
-
-.btn:disabled {
-  background-color: #7a7a7a;
-  cursor: not-allowed;
-}
-
-ul {
-  list-style: none;
-}

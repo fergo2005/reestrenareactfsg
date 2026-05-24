@@ -4,14 +4,11 @@ import './Nav.css';
 
 export const Nav = () => {
     return (
-        <nav>
+        <nav className="nav">
             <ul className="nav-list">
-                <li>
-                    <link to={"/"}>Home</link>
-                </li>
-                <li>
-                    <link to={"/carrito"}>Carrito</link>
-                </li>
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/carrito"}>Carrito</Link></li>
+
             </ul>
         </nav>
     );

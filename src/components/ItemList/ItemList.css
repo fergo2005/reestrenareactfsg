@@ -1,13 +1,20 @@
 .products-container {
-    /* background-color: aqua; */
+    /* background-color: rgb(193, 245, 245); */
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;   
+    justify-content: center;
+
+
 }
 
-.product-link {
+.products-container a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
 
+/* .product-link {
+    text-decoration: none;
+    color: inherit;   
+} */
