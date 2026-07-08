@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { ItemDetail } from '../ItemDetail/ItemDetail';
+import './ItemDetailContainer.css';
 
 export const ItemDetailContainer = () => {
     const { id } = useParams();
@@ -29,8 +31,8 @@ export const ItemDetailContainer = () => {
     return (
         <section>
             <h1>Detalle del Producto </h1>
-            <div className='item-detail-images'> //products-container
-                <itemDetail item={itemDetail} />                
+            <div className='item-detail-container'>
+                <ItemDetail item={itemDetail} />                
             </div>            
         </section>
     );

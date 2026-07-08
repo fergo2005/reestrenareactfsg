@@ -1,9 +1,12 @@
 import { Item } from "../Item/Item";
 
-export const ItemDetail = () => {
+import './ItemDetail.css';
+
+
+export const ItemDetail = ({ item }) => {
     return (
-        <Item {...item}>
-            <button className="btn-primary">Agregar al carrito</button>
+        <Item {...item}>            
+            <button className="btn">Agregar al carrito</button>
         </Item >
     );
 };

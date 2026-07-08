@@ -15,7 +15,7 @@ useEffect(() => {
         });
     }, [] );
 
-    /* console.log(products); */
+    
 
     if (loading) {
         return <p>Cargando productos...</p>;

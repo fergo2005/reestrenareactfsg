@@ -1,0 +1,17 @@
+/* .item-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #d9f9e5;
+} */
+
+.item-detail-container {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #f5d1d1;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
