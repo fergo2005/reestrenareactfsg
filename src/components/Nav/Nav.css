@@ -6,33 +6,64 @@
 
 /* Contenedor UL */
 .nav-list {
+    margin: 0;
+    /* padding: 0rem; */
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    
+    /* color: rgba(0, 0, 255, 0.79); */
+    /* align-items: center; */
+    /* background: rgba(255, 0, 0, 0.536); */
 }
 
-/* Links */
-.nav-list li a {
+.nav-list li {
+    margin-right: 0.5rem;
+    /* font-size: 2rem; */
+    /* margin: 0.5rem; */
+
+    /* background: rgba(49, 49, 228, 0.538); */
+    /* padding: 0.5rem; */
+}
+
+.nav-list a {
+    /* padding: 0.5rem; */
+    
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #ffffff;
-    opacity: 0.9;
-    /* transition: all 0.3s ease; */
-}
+    /* color: inherit; */
 
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    /* opacity: 0.9; */
+}
 
 
 /* Hover moderno con glow */
-.nav-list li a:hover {
-    opacity: 1;
-    transform: scale(1.1);
+.nav-list a:hover {
+    opacity: 1;    
     transition: all 0.3s ease;
     display: inline-block;
     /* transform: scale(1.5); */
+    /* color: rgb(0, 0, 0); */
+    /* color: #57bdf4; */
+    
+    /* Glow principal */
+    filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
+    /* Glow extra */
+    text-shadow:
+        0 0 12px rgba(11, 217, 249, 0.6),
+        0 0 25px rgb(23, 246, 246);
+
+
+
+
+    transform: scale(1.2);
+    /* color: rgb(0, 0, 0); */
     color: rgb(23, 246, 246);
     /* Glow principal */
     filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
@@ -40,7 +71,68 @@
     text-shadow:
         0 0 12px rgba(11, 217, 249, 0.6),
         0 0 25px rgb(23, 246, 246);
+    transition: all 0.3s ease;
     
+}
+
+/* Links */
+/* .nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+} */
+
+
+
+/* Hover moderno con glow */
+/* .nav-list li a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+    transform: scale(1.5);
+    color: rgb(23, 246, 246);
+    Glow principal
+    filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
+    Glow extra
+    text-shadow:
+        0 0 12px rgba(11, 217, 249, 0.6),
+        0 0 25px rgb(23, 246, 246);    
+} */
+
+
+
+.incart {
+
+    /* background-color: #b99095; */
+    background-color: #76f6f6;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* vertical-align: top; */
+    font-size: 0.8rem;
+    font-weight: bold;
+
+
+    /* color: rgb(18, 176, 176); */
+    filter: drop-shadow(0 0 12px #0bd9f999);
+    text-shadow:
+        0 0 12px rgba(11, 217, 249, 0.6),
+        0 0 25px #76f6f6;
+}
+
+.incart:hover {
+    background: #76f6f6;
+    color: black;
 }
 
 

@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   background-color: #f3f4f6;  
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
 }
 
 main {
@@ -46,7 +46,6 @@ main {
 
 .btn {
   display: inline-block;
-
   background-color: #3b82f6;
   padding: .5rem 1rem;
   border-radius: .5rem;

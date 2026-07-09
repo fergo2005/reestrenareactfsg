@@ -1,5 +1,6 @@
 .card {
     width: 18rem;
+    /* max-width: 200px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -20,16 +21,16 @@
 } */
 
 /* Imagen */
-/* .card img {
+.card img {
     width: 100%;
     height: 100%;
     border-radius: 12px 12px 0 0;
     object-fit: cover;
-} */
+}
 
 /* Contenido */
 .card-content {
-    padding: 16px;
+    /* padding: 16px; */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -37,7 +38,7 @@
 
 .card-content h3 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
