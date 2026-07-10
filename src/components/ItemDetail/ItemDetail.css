@@ -1,7 +1,7 @@
 .btn-primary {
     width: 100%;
     max-width: 450px;
-    background-color: #b2b4f9;
+    background-color: #d0d1f4;
     border-radius: 20px;
     box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.08);
     padding: 1rem;
@@ -45,7 +45,7 @@
     font-size: 1.1rem;        
 }
 
-.item-2 {
+/* .item-2 {
     width: 100%;
-    background: #1ae958;
-}
+    background: #ffffff;
+} */

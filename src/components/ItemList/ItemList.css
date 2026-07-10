@@ -1,9 +1,11 @@
 .products-container {
     /* background-color: rgb(193, 245, 245); */
+    padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
     justify-content: center;
+    
 
     /* background: #45ef81; */
 

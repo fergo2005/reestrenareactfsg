@@ -10,7 +10,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
-    background: #edb7b7;
+    background: #ffffff;
 }
 
 .item-detail-title {
@@ -19,9 +19,8 @@
     color: #333;
 }
 
-.detail {
+/* .detail {
     width: 96%;
-    background: #dcf1a6;
-
-}
+    background: #ffffff;
+} */
 
