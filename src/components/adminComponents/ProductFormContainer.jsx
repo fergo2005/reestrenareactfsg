@@ -53,7 +53,7 @@ export const ProductFormContainer = () => {
             //Armar el producto completo
             const productData = {
                 ...product, precio: Number(product.precio),
-                image: imageUrl,
+                imagen: imageUrl,
             };
 
             //Alta
@@ -62,7 +62,9 @@ export const ProductFormContainer = () => {
             //Vaciar
             setProduct({ titulo: "", descripcion: "", precio: "", categoria: "", codigo: "" });
             setFile(null);
-            navigate(`/success/${id}`, { replace: true });
+            
+            navigate(`/admin/products/success/${id}`, { replace: true });
+
 
         } catch (error) {
             setErrors({ general: error.message });
@@ -84,3 +86,7 @@ export const ProductFormContainer = () => {
         </div>
     );
 };
+
+/* navigate(`/success/${id}`, { replace: true });
+navigate(`/admin/products/success/${id}`, { replace: true });
+   lol cambie por un */

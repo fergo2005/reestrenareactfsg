@@ -5,15 +5,12 @@ import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
 
-
+    //se agrega para categorias paa filtrar
+    const { categoryId } = useParams();    
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    //se agrega para categorias
-    const { categoryId } = useParams();
-
     useEffect(() => {
-
         setLoading(true);
 
         /* getProducts() */
@@ -23,7 +20,7 @@ export const ItemListContainer = () => {
             .finally(() => {
                 setLoading(false);
             });
-    }, [categoryId]);
+111    }, [categoryId]);
     // No olvidar el category si se usa filtro por categoria.
 
 

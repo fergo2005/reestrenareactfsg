@@ -17,9 +17,14 @@ export const uploadImage = async (file) => {
       throw new Error("Error al subir la imagen");
     }
 
-    return data.data.url;
+    return data.data.url;    // 👈 ESTA ES LA BUENA
+
   } catch (error) {
     console.error("ImgBB error:", error);
     throw error;
   }
 };
+
+/* cambios sin saber porque todavia */
+/* return data.data.image.url;   se le agrego image tampoco funciona */
+/* return data.data.display_url; */

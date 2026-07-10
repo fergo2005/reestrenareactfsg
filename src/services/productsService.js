@@ -17,9 +17,9 @@ import { db } from "../firebase/config";
 //Creamos una función para obtener todos los productos de la base de datos
 const productsRef = collection(db, "products");
 
-/* --------------- */
-/* TRAER PRODUCTOS */
-/* --------------- */
+/* ---------------------------------------------------------------------- */
+/*                            TRAER PRODUCTOS                             */
+/* ---------------------------------------------------------------------- */
 
 /* get de todos los productos */
 export const getProducts = async () => {
@@ -35,9 +35,9 @@ export const getProducts = async () => {
 };
 
 
-/* --------------------- */
-/* TRAER PRODUCTO POR ID */
-/* --------------------- */
+/* ---------------------------------------------------------------------- */
+/*                            TRAER PRODUCTO POR ID                       */
+/* ---------------------------------------------------------------------- */
 
 //funcion que solo pide un dato
 export const getProductById = async (id) => {
@@ -63,9 +63,9 @@ export const getProductById = async (id) => {
 };
 
 
-/* --------------------------  */
-/* SI FILTRAMOS POR CATEGORIA  */
-/* --------------------------  */
+/* ---------------------------------------------------------------------- */
+/*                            SI FILTRAMOS POR CATEGORIA                  */
+/* ---------------------------------------------------------------------- */
 
 export const getByCategory = async (categoryId) => {
     try {
@@ -92,19 +92,20 @@ export const getByCategory = async (categoryId) => {
 };
 
 
-/* ----------------------------  */
-/*        ALTA   DE  PRODUCTO    */
-/* ----------------------------  */
+/* ---------------------------------------------------------------------- */
+/*                            ALTA   DE  PRODUCTO                         */
+/* ---------------------------------------------------------------------- */
 export const createProduct = async (productData) => {
     try {
         const docRef = await addDoc(productsRef, productData);
 
-        return docRef.id
+        return docRef.id;
 
     } catch (error) {
         console.error("Error al crear producto: ", error);
         throw error;
     }
 };
+
 
 /* productsForm aqui es productsList */
