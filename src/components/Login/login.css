@@ -1,0 +1,104 @@
+/* CONTENEDOR DEL FORMULARIO */
+.login-form {
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    padding: 1rem;
+
+    /* Glassmorphism */
+    background: rgba(20, 20, 25, 0.45);
+    border-radius: 20px;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgba(0, 140, 255, 0.25);
+
+    /* Glow */
+    box-shadow:
+        0 0 25px rgba(0, 140, 255, 0.25),
+        0 0 60px rgba(0, 140, 255, 0.15),
+        inset 0 0 25px rgba(0, 140, 255, 0.12),
+        inset 0 0 60px rgba(0, 140, 255, 0.08);
+
+    color: #eaf6ff;
+    font-family: system-ui, sans-serif;
+}
+
+/* TÍTULO */
+.login-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #bfe3ff;
+    text-shadow: 0 0 12px rgba(0, 140, 255, 0.7);
+}
+
+/* GRUPOS DE FORMULARIO */
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #d6e9ff;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.4);
+}
+
+/* INPUTS */
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 140, 255, 0.35);
+    border-radius: 12px;
+    color: #eaf6ff;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: border-color 0.2s ease,
+        box-shadow 0.3s ease,
+        background 0.2s ease;
+}
+
+.login-form input:focus {
+    border-color: #00aaff;
+    background: rgba(0, 140, 255, 0.12);
+    box-shadow:
+        0 0 15px rgba(0, 140, 255, 0.8),
+        0 0 35px rgba(0, 140, 255, 0.5);
+    outline: none;
+}
+
+/* BOTÓN */
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    background: rgba(0, 140, 255, 0.25);
+    color: #eaf6ff;
+    border: 1px solid rgba(0, 140, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: background 0.25s ease,
+        box-shadow 0.3s ease,
+        transform 0.1s ease;
+}
+
+.login-form button:hover {
+    background: rgba(0, 140, 255, 0.45);
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.9),
+        0 0 45px rgba(0, 140, 255, 0.6);
+}
+
+.login-form button:active {
+    transform: scale(0.97);
+}

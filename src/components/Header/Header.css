@@ -1,20 +1,21 @@
 /* HEADER */
 
 .header {
-    /* height: 100px; */
     /* background: #000000; */
-    background-color: rgb(87, 85, 85);
-    padding: .5rem;
+    background-color: antiquewhite;
+    /* color: #000000; */
+    padding: 1rem;
     display: flex;    
     flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
+
     /* Sombra moderna */
-    /* box-shadow: 0 4px 16px rgba(250, 6, 6, 0.12); */
+    box-shadow: 0 4px 16px rgba(250, 6, 6, 0.12);
     position: sticky;
     top: 0;
     z-index: 100;
-    /* color: #17f6f6; */
 }
 
 /* Contenedor del logo + texto */
@@ -25,9 +26,8 @@
 
 /* Imagen del logo */
 .logo {
-    
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     /* object-fit: contain; */
     margin-right: 1rem;
     border-radius: 50%;
@@ -38,8 +38,7 @@
 .logo:hover {
     filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
     opacity: 1;
-    transform: scale(1.2);
-    
+    transform: scale(1.05);
 
     filter: drop-shadow(0 0 25px rgb(23, 246, 246));
 }
@@ -50,17 +49,17 @@
 .logo-text {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #ffffff;
+    /* color: rgb(23, 246, 246); */
+    color: rgb(25, 26, 25);
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     opacity: 0.9;
 }
 
 .logo-text:hover {
-    /* opacity: 1; */
-    transform: scale(1.1);
-    /* color: rgb(0, 0, 0); */
-    color: rgb(23, 246, 246);
+    opacity: 1;
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
     /* Glow principal */
     filter: drop-shadow(0 0 12px rgba(11, 217, 249, 0.6));
     /* Glow extra */

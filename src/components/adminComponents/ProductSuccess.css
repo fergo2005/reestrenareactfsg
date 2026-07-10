@@ -1,0 +1,81 @@
+/* CONTENEDOR PRINCIPAL */
+.success-page {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+
+    /* Glassmorphism */
+    background: rgba(20, 20, 25, 0.45);
+    border-radius: 20px;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgba(0, 140, 255, 0.25);
+
+    /* Glow */
+    box-shadow:
+        0 0 25px rgba(0, 140, 255, 0.25),
+        0 0 60px rgba(0, 140, 255, 0.15),
+        inset 0 0 25px rgba(0, 140, 255, 0.12),
+        inset 0 0 60px rgba(0, 140, 255, 0.08);
+
+    text-align: center;
+    color: #eaf6ff;
+    font-family: system-ui, sans-serif;
+}
+
+/* ICONO DE ÉXITO */
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #4da3ff;
+    text-shadow:
+        0 0 12px rgba(77, 163, 255, 0.8),
+        0 0 25px rgba(77, 163, 255, 0.5);
+}
+
+/* TÍTULO */
+.success-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #bfe3ff;
+    text-shadow: 0 0 12px rgba(0, 140, 255, 0.7);
+}
+
+/* TEXTO */
+.success-page p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #d6e9ff;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.4);
+}
+
+/* BOTÓN */
+.success-page .btn {
+    margin-top: 20px;
+    padding: 14px 20px;
+    background: rgba(0, 140, 255, 0.25);
+    color: #eaf6ff;
+    border: 1px solid rgba(0, 140, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: background 0.25s ease,
+        box-shadow 0.3s ease,
+        transform 0.1s ease;
+}
+
+.success-page .btn:hover {
+    background: rgba(0, 140, 255, 0.45);
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.9),
+        0 0 45px rgba(0, 140, 255, 0.6);
+}
+
+.success-page .btn:active {
+    transform: scale(0.97);
+}

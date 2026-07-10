@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 const CartContext = createContext();
 
 /* CUSTOM HOOK PARA EL CARRITO DE COMPRAS */
-
 export const useCart = () => {
     const context = useContext(CartContext);
     if (!context) {

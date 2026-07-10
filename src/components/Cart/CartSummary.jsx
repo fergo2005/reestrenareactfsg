@@ -4,7 +4,6 @@ import { useCart } from "../../context/CartContext";
 
 
 export const CartSummary = () => {
-    
     const { totalPrice, clearCart, checkout } = useCart(); //getCartQuantity
 
     console.log("totalPrice en CartSummary:", totalPrice()); //total a pagar

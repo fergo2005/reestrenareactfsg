@@ -14,7 +14,7 @@ export const ItemList = ({ products }) => {
                 <Link to={`/product/${product.id}`} key={product.id} >
                     <Item {...product} />
                 </Link>
-            ))};
+            ))}
         </div>
     );
 };
