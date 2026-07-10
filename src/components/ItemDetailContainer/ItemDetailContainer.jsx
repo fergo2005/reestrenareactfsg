@@ -23,7 +23,7 @@ export const ItemDetailContainer = () => {
     return (
         <section className='item-detail-container'>
             <h1 className='item-detail-title'>Detalle del Producto </h1>
-            <div>
+            <div className='detail'>
                 <ItemDetail item={itemDetail} />
             </div>
         </section>

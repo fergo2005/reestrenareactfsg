@@ -2,10 +2,10 @@
     /* background-color: rgb(193, 245, 245); */
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: .5rem;
     justify-content: center;
 
-    /* background: #b1edc6; */
+    /* background: #45ef81; */
 
 
 }
