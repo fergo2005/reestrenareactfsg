@@ -17,35 +17,44 @@ export const useCart = () => {
     return context;
 };
 
-
 /* ----------------------------------- */
 /* PROVIDER PARA EL CARRITO DE COMPRAS */
 /* ----------------------------------- */
 
 export const CartProvider = ({ children }) => {
     const navigate = useNavigate(); // Hook de React Router para redirigir al usuario después del checkout
-    
+
     const [cart, setCart] = useState([]); //el carrito es un array de productos vacío al inicio
-        
+
     const isInCart = (productId) => {  // evalua si un producto ya está en el carrito, recibe el id del producto y devuelve true o false
         const inCart = cart.some((item) => item.id === productId);
         return inCart;
     }
 
     /* PARA LOS QUE DECIDAN NO USAR EL CONTADOR QUANTITY EN LOS PRODUCTOS */
-    /* AGREGAR AL CARRITO */    
+    /* AGREGAR AL CARRITO */
 
     const addToCart = (product) => {    //  addItem = addToCart
-        if (isInCart(product.id)) { // Si el producto ya está en el carrito, no se agrega y se muestra un mensaje de alerta
+        /* if (isInCart(product.id)) { // Si el producto ya está en el carrito, no se agrega y se muestra un mensaje de alerta
             alert("El producto ya está en el carrito");
             navigate("/"); // Redirige al usuario a la página de inicio
             return;
+        } */
+
+        if (isInCart(product.id)) {
+            return { status: "exists" };
         }
 
+
         setCart((prevCart) => [...prevCart, product]);
+        
+        return { status: "added" };
+        
         /* console.log("cart en provider:", cart); */
-        alert("Producto agregado al carrito 🛒");
-        navigate("/"); // Redirige al usuario a la página de inicio después del checkout
+        /* alert("Producto agregado al carrito 🛒"); */
+        /* navigate("/"); */ // Redirige al usuario a la página de inicio después del checkout
+
+
     };
 
     /* ELIMINAR DEL CARRITO */
@@ -81,19 +90,19 @@ export const CartProvider = ({ children }) => {
     }
 
 
-    const values = { 
+    const values = {
         cart,
-        addToCart, 
-        removeFromCart, 
-        totalInCart, 
+        addToCart,
+        removeFromCart,
+        totalInCart,
         totalPrice,
-        clearCart,         
+        clearCart,
         checkout,
     };
 
     return (     // const values = { cart, addToCart, removeFromCart }; //el value es un objeto que contiene el estado del carrito y las funciones para agregar y eliminar productos
         //el value es un objeto que contiene el estado del carrito y las funciones para agregar y eliminar productos
-        <CartContext.Provider value={values}>   
+        <CartContext.Provider value={values}>
             {children}
         </CartContext.Provider>
     );

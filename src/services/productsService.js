@@ -51,7 +51,7 @@ export const getProductById = async (id) => {
         //verificamos si existe
         if( snapshot.exists()) {
             const product = {id: snapshot.id, ...snapshot.data( )};
-            console.log("Doc:", product);
+            /* console.log("Doc:", product); */
             return product;            
             } else {
                 return null;

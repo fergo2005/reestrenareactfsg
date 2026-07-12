@@ -1,11 +1,11 @@
 import './Item.css';
 
-export const Item = ({ titulo, descripcion, precio, imagen, children }) => {
+export const Item = ({ titulo, descripcion, precio, imagen, children, variant = "default" }) => {
     // Aseguramos que siempre exista una imagen
     /* const imagenPrincipal = imagenes[0] || '/placeholder.jpg';  */
     // Imagen por defecto si no hay imágenes
     return (
-        <article className='card'>
+        <article className={`card ${variant === "detail" ? "card-detail" : ""}`}>
             
             <img src={imagen} alt={titulo} />
             

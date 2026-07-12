@@ -68,7 +68,7 @@
         transform 0.1s ease;
 }
 
-.btn-primary:hover,
+/* .btn-primary:hover, */
 .bg-delete:hover {
     background: rgba(0, 140, 255, 0.45);
     box-shadow:
