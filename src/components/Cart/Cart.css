@@ -33,7 +33,7 @@
     
     flex-wrap: wrap;
     align-items: stretch;
-    background: #e4f778;
+    /* background: #e4f778; */
 }
 
 .cart-list {
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     gap: .5rem;
     width: 100%;
-    background: #e4f778;
+   /*  background: #e4f778; */
 }
 
 .cart-empty {
